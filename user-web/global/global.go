@@ -2,8 +2,8 @@ package global
 
 import (
 	ut "github.com/go-playground/universal-translator"
-	"mxshop-api/user-web/config"
-	"mxshop-api/user-web/proto"
+	"weishop-api/user-web/config"
+	"weishop-api/user-web/proto"
 	"github.com/go-playground/validator/v10"
 )
 

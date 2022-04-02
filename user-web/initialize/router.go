@@ -2,7 +2,7 @@ package initialize
 
 import (
 	"github.com/gin-gonic/gin"
-	"mxshop-api/user-web/router"
+	"weishop-api/user-web/router"
 	"net/http"
 )
 

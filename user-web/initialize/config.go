@@ -3,7 +3,7 @@ package initialize
 import (
 	"fmt"
 	"go.uber.org/zap"
-	"mxshop-api/user-web/global"
+	"weishop-api/user-web/global"
 
 	"github.com/spf13/viper"
 )

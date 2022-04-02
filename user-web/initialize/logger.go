@@ -6,7 +6,7 @@ import (
 	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"mxshop-api/user-web/config"
+	"weishop-api/user-web/config"
 	"net"
 	"net/http"
 	"net/http/httputil"

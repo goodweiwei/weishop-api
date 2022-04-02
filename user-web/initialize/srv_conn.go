@@ -3,8 +3,8 @@ package initialize
 import (
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
-	"mxshop-api/user-web/global"
-	"mxshop-api/user-web/proto"
+	"weishop-api/user-web/global"
+	"weishop-api/user-web/proto"
 )
 
 func InitSrvConn()  {

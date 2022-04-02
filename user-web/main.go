@@ -6,9 +6,9 @@ import (
 	ut "github.com/go-playground/universal-translator"
 	"github.com/go-playground/validator/v10"
 	"go.uber.org/zap"
-	"mxshop-api/user-web/global"
-	"mxshop-api/user-web/initialize"
-	myvalidator "mxshop-api/user-web/validator"
+	"weishop-api/user-web/global"
+	"weishop-api/user-web/initialize"
+	myvalidator "weishop-api/user-web/validator"
 )
 
 func main() {
