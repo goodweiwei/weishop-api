@@ -7,3 +7,4 @@
 {"level":"DEBUG","time":"2022-04-02T16:51:16.926+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8848"}
 {"level":"PANIC","time":"2022-04-02T16:51:16.928+0800","caller":"user-web/main.go:44","msg":"启动失败listen tcp :8848: bind: address already in use"}
 {"level":"DEBUG","time":"2022-04-02T16:54:25.731+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8848"}
+{"level":"DEBUG","time":"2022-04-02T16:57:04.841+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}

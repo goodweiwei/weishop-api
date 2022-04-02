@@ -3,22 +3,25 @@ package api
 import (
 	"context"
 	"fmt"
+	"github.com/go-redis/redis"
+	"net/http"
+	"strconv"
+	"strings"
+	"time"
+
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"go.uber.org/zap"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
+
 	"weishop-api/user-web/forms"
 	"weishop-api/user-web/global"
 	"weishop-api/user-web/global/response"
 	"weishop-api/user-web/middlewares"
 	"weishop-api/user-web/models"
 	"weishop-api/user-web/proto"
-	"net/http"
-	"strconv"
-	"strings"
-	"time"
 )
 
 func HandleGrpcErrorToHttp(err error, c *gin.Context) {
@@ -229,5 +232,56 @@ func RegisterUser(ctx *gin.Context)  {
 		})
 		return
 	}
-
+	rdb := redis.NewClient(&redis.Options{
+		Addr: fmt.Sprintf("%s:%d",global.ServerConfig.RedisInfo.Host,global.ServerConfig.RedisInfo.Port),
+	})
+	value, err := rdb.Get(registerForm.Mobile).Result()
+	if err == redis.Nil{
+		ctx.JSON(http.StatusBadRequest,gin.H{
+			"code":"验证码错误",
+		})
+		return
+	}else {
+		if value != registerForm.Code{
+			ctx.JSON(http.StatusBadRequest,gin.H{
+				"code":"验证码错误",
+			})
+			return
+		}
+	}
+	user,err:= global.UserSrvClient.CreatUser(context.Background(),&proto.CreatUserInfo{
+		Mobile: registerForm.Mobile,
+		NickName: registerForm.Mobile,
+		Password: registerForm.Password,
+	})
+	if err!=nil{
+		zap.S().Errorf("新建用户失败，%s",err.Error())
+		HandleGrpcErrorToHttp(err,ctx)
+		return
+	}
+	//生成token
+	j := middlewares.NewJWT()
+	claims := models.CustomClaims{
+		Id:          uint(user.Id),
+		Nickname:    user.NickName,
+		AuthorityId: uint(user.Role),
+		StandardClaims: jwt.StandardClaims{
+			NotBefore: time.Now().Unix(),
+			ExpiresAt: time.Now().Unix() + 60*60*24*30,
+			Issuer:    "wei",
+		},
+	}
+	token, err := j.CreateToken(claims)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, gin.H{
+			"msg": "生成token失败",
+		})
+		return
+	}
+	ctx.JSON(http.StatusOK, gin.H{
+		"id":         user.Id,
+		"nick_name":  user.NickName,
+		"token":      token,
+		"expired_at": (time.Now().Unix() + 60*60*24*30) * 1000,
+	})
 }
