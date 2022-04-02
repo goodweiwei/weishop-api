@@ -1,0 +1,6 @@
+{"level":"DEBUG","time":"2022-04-02T14:40:11.659+0800","caller":"user-web/main.go:43","msg":"启动服务器，端口：8848"}
+{"level":"INFO","time":"2022-04-02T14:40:23.022+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/captcha","status":200,"method":"GET","path":"/u/v1/base/captcha","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.009928155}
+{"level":"DEBUG","time":"2022-04-02T14:47:40.485+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8848"}
+{"level":"INFO","time":"2022-04-02T14:47:48.552+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/captcha","status":200,"method":"GET","path":"/u/v1/base/captcha","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.005309665}
+{"level":"INFO","time":"2022-04-02T14:47:50.817+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/captcha","status":200,"method":"GET","path":"/u/v1/base/captcha","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.002833227}
+{"level":"INFO","time":"2022-04-02T14:47:52.802+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/captcha","status":200,"method":"GET","path":"/u/v1/base/captcha","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.002807252}
