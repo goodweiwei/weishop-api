@@ -4,3 +4,5 @@
 {"level":"INFO","time":"2022-04-02T14:47:48.552+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/captcha","status":200,"method":"GET","path":"/u/v1/base/captcha","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.005309665}
 {"level":"INFO","time":"2022-04-02T14:47:50.817+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/captcha","status":200,"method":"GET","path":"/u/v1/base/captcha","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.002833227}
 {"level":"INFO","time":"2022-04-02T14:47:52.802+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/captcha","status":200,"method":"GET","path":"/u/v1/base/captcha","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.002807252}
+{"level":"DEBUG","time":"2022-04-02T16:51:16.926+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8848"}
+{"level":"PANIC","time":"2022-04-02T16:51:16.928+0800","caller":"user-web/main.go:44","msg":"启动失败listen tcp :8848: bind: address already in use"}
