@@ -11,5 +11,6 @@ func InitUserRouter(Router *gin.RouterGroup) {
 		UserRouter.GET("list", api.GetUserList)
 		UserRouter.GET("/id/:id", api.GetUserById)
 		UserRouter.POST("/login", api.PasswordLogin)
+		UserRouter.POST("/register", api.RegisterUser)
 	}
 }

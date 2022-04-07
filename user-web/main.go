@@ -14,7 +14,7 @@ import (
 func main() {
 	initialize.InitConfig()
 	//1.初始化logger
-	if err:=initialize.InitLogger(global.ServerConfig);err!=nil{
+	if err := initialize.InitLogger(global.ServerConfig); err != nil {
 		panic(err)
 	}
 	//2.初始化配置文件
@@ -39,9 +39,27 @@ func main() {
 		})
 	}
 
+	//服务注册
+	//registerClient := consul.NewRegistryClient(global.ServerConfig.ConsulInfo.Host, global.ServerConfig.ConsulInfo.Port)
+	//serviceId := fmt.Sprintf("%s", uuid.New())
+	//err := registerClient.Register(global.ServerConfig.Host, global.ServerConfig.Port, global.ServerConfig.Name, global.ServerConfig.Tags, serviceId)
+	//if err != nil {
+	//	zap.S().Panic("服务注册失败：", err.Error())
+	//}
+
 	zap.S().Debugf("启动服务器，端口：%d", global.ServerConfig.Port)
 	if err := Router.Run(fmt.Sprintf(":%d", global.ServerConfig.Port)); err != nil {
 		zap.S().Panic("启动失败", err.Error())
 	}
+
+	//接收终止信号
+	//quit := make(chan os.Signal)
+	//signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
+	//<-quit
+	//if err:=registerClient.DeRegister(serviceId);err != nil{
+	//	zap.S().Info("注销失败：", err.Error())
+	//}else {
+	//	zap.S().Info("注销成功")
+	//}
 
 }

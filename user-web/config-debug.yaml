@@ -13,3 +13,8 @@ log:
   max_size: 200
   max_age: 7
   max_backups: 1
+
+redis:
+  host: '127.0.0.1'
+  port: 6379
+  expire: 30000

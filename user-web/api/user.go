@@ -251,7 +251,7 @@ func RegisterUser(ctx *gin.Context)  {
 	}
 	user,err:= global.UserSrvClient.CreatUser(context.Background(),&proto.CreatUserInfo{
 		Mobile: registerForm.Mobile,
-		NickName: registerForm.Mobile,
+		NickName: registerForm.NickName,
 		Password: registerForm.Password,
 	})
 	if err!=nil{

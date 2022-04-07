@@ -8,3 +8,49 @@
 {"level":"PANIC","time":"2022-04-02T16:51:16.928+0800","caller":"user-web/main.go:44","msg":"启动失败listen tcp :8848: bind: address already in use"}
 {"level":"DEBUG","time":"2022-04-02T16:54:25.731+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8848"}
 {"level":"DEBUG","time":"2022-04-02T16:57:04.841+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"DEBUG","time":"2022-04-06T12:28:37.219+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"DEBUG","time":"2022-04-06T12:30:27.287+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"DEBUG","time":"2022-04-06T14:02:48.382+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"INFO","time":"2022-04-06T14:02:53.101+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001540127}
+{"level":"DEBUG","time":"2022-04-06T14:06:10.435+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"INFO","time":"2022-04-06T14:06:24.741+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000749186}
+{"level":"DEBUG","time":"2022-04-06T14:08:58.321+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"INFO","time":"2022-04-06T14:43:34.434+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":2054.962463889}
+{"level":"DEBUG","time":"2022-04-06T14:44:40.593+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"INFO","time":"2022-04-06T14:44:46.398+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.0020858}
+{"level":"DEBUG","time":"2022-04-06T14:54:39.664+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"INFO","time":"2022-04-06T14:55:02.972+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000668201}
+{"level":"DEBUG","time":"2022-04-06T14:55:59.026+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"INFO","time":"2022-04-06T14:56:05.769+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000730436}
+{"level":"DEBUG","time":"2022-04-06T15:00:03.064+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"INFO","time":"2022-04-06T15:00:07.442+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001716911}
+{"level":"DEBUG","time":"2022-04-06T15:02:26.598+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"DEBUG","time":"2022-04-06T15:02:37.053+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"DEBUG","time":"2022-04-06T15:04:56.267+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"INFO","time":"2022-04-06T15:05:58.779+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":52.926436751}
+{"level":"DEBUG","time":"2022-04-06T15:12:40.080+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"INFO","time":"2022-04-06T15:13:54.265+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.002291557}
+{"level":"INFO","time":"2022-04-06T15:15:14.732+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001795299}
+{"level":"INFO","time":"2022-04-06T15:15:48.646+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001117488}
+{"level":"DEBUG","time":"2022-04-06T15:16:10.113+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"INFO","time":"2022-04-06T15:16:52.279+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001417175}
+{"level":"DEBUG","time":"2022-04-06T15:17:52.957+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"INFO","time":"2022-04-06T15:18:40.702+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":38.632540487}
+{"level":"DEBUG","time":"2022-04-06T15:19:29.327+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"INFO","time":"2022-04-06T15:20:24.486+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":49.36762984}
+{"level":"DEBUG","time":"2022-04-06T16:29:38.422+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"INFO","time":"2022-04-06T16:29:44.911+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.064936537}
+{"level":"INFO","time":"2022-04-06T16:34:01.687+0800","caller":"initialize/logger.go:70","msg":"/u/v1/base/send_sms","status":200,"method":"POST","path":"/u/v1/base/send_sms","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.002596506}
+{"level":"ERROR","time":"2022-04-06T16:34:57.006+0800","caller":"api/user.go:258","msg":"新建用户失败，rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing dial tcp :50051: connect: connection refused\""}
+{"level":"INFO","time":"2022-04-06T16:34:57.009+0800","caller":"initialize/logger.go:70","msg":"/u/v1/user/register","status":500,"method":"POST","path":"/u/v1/user/register","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.004584042}
+{"level":"ERROR","time":"2022-04-06T16:35:23.550+0800","caller":"api/user.go:258","msg":"新建用户失败，rpc error: code = Internal desc = Failed to serialize response!"}
+{"level":"INFO","time":"2022-04-06T16:35:23.550+0800","caller":"initialize/logger.go:70","msg":"/u/v1/user/register","status":500,"method":"POST","path":"/u/v1/user/register","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.247785894}
+{"level":"DEBUG","time":"2022-04-06T16:39:44.777+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"ERROR","time":"2022-04-06T16:40:11.261+0800","caller":"api/user.go:258","msg":"新建用户失败，rpc error: code = Internal desc = Failed to serialize response!"}
+{"level":"INFO","time":"2022-04-06T16:40:11.262+0800","caller":"initialize/logger.go:70","msg":"/u/v1/user/register","status":500,"method":"POST","path":"/u/v1/user/register","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.165757423}
+{"level":"ERROR","time":"2022-04-06T17:03:46.980+0800","caller":"api/user.go:258","msg":"新建用户失败，rpc error: code = Internal desc = Failed to serialize response!"}
+{"level":"INFO","time":"2022-04-06T17:03:46.980+0800","caller":"initialize/logger.go:70","msg":"/u/v1/user/register","status":500,"method":"POST","path":"/u/v1/user/register","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.115713815}
+{"level":"DEBUG","time":"2022-04-06T17:07:34.995+0800","caller":"user-web/main.go:42","msg":"启动服务器，端口：8021"}
+{"level":"ERROR","time":"2022-04-06T17:07:51.956+0800","caller":"api/user.go:258","msg":"新建用户失败，rpc error: code = Internal desc = Failed to serialize response!"}
+{"level":"INFO","time":"2022-04-06T17:07:51.957+0800","caller":"initialize/logger.go:70","msg":"/u/v1/user/register","status":500,"method":"POST","path":"/u/v1/user/register","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.142532568}
+{"level":"INFO","time":"2022-04-06T17:09:22.696+0800","caller":"initialize/logger.go:70","msg":"/u/v1/user/register","status":200,"method":"POST","path":"/u/v1/user/register","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":1.334356759}

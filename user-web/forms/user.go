@@ -10,5 +10,6 @@ type PasswordLoginForm struct {
 type RegisterUserForm struct {
 	Mobile string `form:"mobile" json:"mobile" binding:"required,mobile"`
 	Password  string `form:"password" json:"password" binding:"required,min=6,max=20"`
+	NickName string `form:"nick_name" json:"nick_name" binding:"required,min=6,max=20"`
 	Code   string `form:"code" json:"code" binding:"required,min=6,max=6"`
 }

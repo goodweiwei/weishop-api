@@ -1,16 +1,35 @@
 package api
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/go-redis/redis"
+	"math/rand"
 	"net/http"
+	"strings"
+	"time"
 	"weishop-api/user-web/forms"
+	"weishop-api/user-web/global"
 )
 
-func SendSms(ctx *gin.Context)  {
-	SendSmsForm := forms.SendSmsForm{}
-	if err := ctx.ShouldBind(&SendSmsForm);err!=nil{
+func GenerateSmsCode(width int) string {
+	numeric := [10]byte{0,1,2,3,4,5,6,7,8,9}
+	r := len(numeric)
+	rand.Seed(time.Now().UnixNano())
+
+	var sb strings.Builder
+	for i := 0; i < width; i++ {
+		fmt.Fprintf(&sb, "%d", numeric[ rand.Intn(r) ])
+	}
+	return sb.String()
+}
+
+
+func SendSms(ctx *gin.Context) {
+	sendSmsForm := forms.SendSmsForm{}
+	if err := ctx.ShouldBind(&sendSmsForm); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{
-			"msg":HandleValidatorError(err),
+			"msg": HandleValidatorError(err),
 		})
 		return
 	}
@@ -37,4 +56,14 @@ func SendSms(ctx *gin.Context)  {
 	//if err != nil {
 	//	fmt.Print(err.Error())
 	//}
+	smsCode := GenerateSmsCode(6)
+	fmt.Println(smsCode)
+	rdb := redis.NewClient(&redis.Options{
+		Addr: fmt.Sprintf("%s:%d", global.ServerConfig.RedisInfo.Host, global.ServerConfig.RedisInfo.Port),
+	})
+	rdb.Set(sendSmsForm.Mobile, smsCode, time.Duration(global.ServerConfig.RedisInfo.Expire)*time.Second)
+
+	ctx.JSON(http.StatusOK, gin.H{
+		"msg": "发送成功",
+	})
 }
