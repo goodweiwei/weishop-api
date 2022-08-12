@@ -1,20 +1,20 @@
-host: '127.0.0.1'
-port: 8021
-namespace: 'c1872978-d51c-4188-a497-4e0cd20b97d5'
+host: '82.157.166.247'
+port: 8848
+namespace: '620ebc22-16f5-431b-a6a2-da9079e141fb'
 user: 'nacos'
 password: 'nacos'
-dataid: 'user-web.json'
+dataid: 'user-web'
 group: 'dev'
-jwt:
-  key: 'C9PmbsWkH_27udfaazqJsLyDQ'
-log:
-  level: 'debug'
-  filename: 'user-web/logs/app.log'
-  max_size: 200
-  max_age: 7
-  max_backups: 1
-
-redis:
-  host: '127.0.0.1'
-  port: 6379
-  expire: 30000
+#jwt:
+#  key: 'C9PmbsWkH_27udfaazqJsLyDQ'
+#log:
+#  level: 'debug'
+#  filename: 'user-web/logs/app.log'
+#  max_size: 200
+#  max_age: 7
+#  max_backups: 1
+#
+#redis:
+#  host: '127.0.0.1'
+#  port: 6379
+#  expire: 30000

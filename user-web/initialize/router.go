@@ -2,6 +2,7 @@ package initialize
 
 import (
 	"github.com/gin-gonic/gin"
+	"weishop-api/user-web/middlewares"
 	"weishop-api/user-web/router"
 	"net/http"
 )
@@ -16,6 +17,9 @@ func Routers() *gin.Engine {
 			"success": true,
 		})
 	})
+
+	//配置跨域
+	Router.Use(middlewares.Cors())
 
 	ApiGroup := Router.Group("/u/v1")
 	router.InitUserRouter(ApiGroup)
